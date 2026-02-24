@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Southside Cuts | Oklahoma City</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e0e;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+section {
+    padding: 90px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #cfcfcf;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    margin-right: 15px;
+    text-decoration: none;
+    border: 1px solid #c8a96a;
+    color: #c8a96a;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #c8a96a;
+    color: #0e0e0e;
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.graffiti-overlay {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80') repeat;
+    opacity: 0.07;
+    animation: moveTexture 60s linear infinite;
+}
+
+@keyframes moveTexture {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(300px, 300px); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin: 25px 0 35px 0;
+}
+
+/* SERVICES */
+
+.services ul {
+    list-style: none;
+}
+
+.services li {
+    padding: 14px 0;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+/* INFO BOXES */
+
+.info-box {
+    background-color: #111;
+    padding: 50px;
+    border: 1px solid #222;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #000;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+@media(max-width:768px){
+    h1 {
+        font-size: 2.4rem;
+    }
+    section {
+        padding: 70px 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="graffiti-overlay"></div>
+    <div class="hero-content">
+        <h1>CUT DIFFERENT.</h1>
+        <p>Southside Oklahoma City’s grit meets precision craft. Clean fades. Sharp lines. No gimmicks. Just elite barber work built for the city.</p>
+        <a href="tel:4058004220" class="btn">Call Now</a>
+        <a href="#services" class="btn">View Services</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2>BUILT FOR THE SOUTH SIDE.</h2>
+    <p>Located at 3417 Southwest 22nd Street in Oklahoma City, we blend authentic street culture with professional craftsmanship. Every fade, taper, and beard sculpt is done with precision and pride.</p>
+    <p>This isn’t a chain shop. This is personal.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <h2>STRAIGHT PRICING. NO SURPRISES.</h2>
+    <ul>
+        <li><span>Traditional Haircut</span><span>$25</span></li>
+        <li><span>Skin Fade / Taper Fade</span><span>$35</span></li>
+        <li><span>Haircut + Beard</span><span>$40</span></li>
+        <li><span>Premium Detail Cut</span><span>$45</span></li>
+    </ul>
+    <p style="margin-top:25px;">Walk-ins welcome. Appointments recommended.</p>
+</section>
+
+<!-- HOURS -->
+<section>
+    <div class="info-box">
+        <h2>HOURS</h2>
+        <p>Monday – Friday: 6:00 AM – 9:00 PM</p>
+        <p>Saturday – Sunday: 10:00 AM – 3:00 PM</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <div class="info-box">
+        <h2>FIND US</h2>
+        <p>3417 Southwest 22nd Street<br>Oklahoma City, Oklahoma</p>
+        <p>Phone: <a href="tel:4058004220" style="color:#c8a96a;">405-800-4220</a></p>
+        <p>Email: <a href="mailto:barbershop222@gmail.com" style="color:#c8a96a;">barbershop222@gmail.com</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Southside Cuts | Oklahoma City
+</footer>
+
+</body>
+</html>
